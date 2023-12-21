@@ -4,9 +4,9 @@ function WiscIdeaHome () {
     return <>
         <h1>Welcome to the Wisconsin Idea: Past, Present, Future Website!</h1>
         <Image src="../../figures/wiscideahome.jpg" alt="Wisconsin Idea Home" style={{
-            resizeMode: 'contain',
-            height: 1000,
-            width: 500,
+            resizeMode: 'auto',
+            height: "559px",
+            width: "339px",
           }}/>
         <h2>Choose a topic from the sidebar menu to begin!</h2>
     </>
