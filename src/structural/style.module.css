@@ -68,9 +68,3 @@ header{
 .sidebarOpen {
     margin-left: 300px; /* Adjust this value to match your sidebar's width */
 }
-
-@media (max-width: 768px) {
-    .sidebar-open {
-      margin-left: 0; /* Adjust or remove the push effect on small screens */
-    }
-}
