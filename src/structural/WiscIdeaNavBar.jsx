@@ -8,21 +8,22 @@ import classes from './style.module.css'
 import WiscIdeaSideBar from './WiscIdeaSideBar';
 import WiscIdeaNavBarContext from '../contexts/WiscIdeaNavBarContext';
 
-const WiscIdeaNavBar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+const WiscIdeaNavBar = ({isOpen, setIsOpen}) => {
 
     const openSidebar = () => {
         setIsOpen(true);
+        //console.log(isOpen);
     }
 
     
     const closeSidebar = () => {
         setIsOpen(false);
+        //console.log(isOpen);
     }
 
   return (
     <>
-    <header className='header-navbar'>
+    <header>
         <div className='navbar'>
             <div className={classes.menuButton} onClick={openSidebar}>
                 <MenuIcon size={30}/>

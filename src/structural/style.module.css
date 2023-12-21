@@ -60,3 +60,17 @@ header{
     align-items: center;
     justify-content: center;
 }
+
+.mainContent {
+    transition: margin-left 0.5s; /* Smooth transition for the pushing effect */
+  }
+  
+.sidebarOpen {
+    margin-left: 300px; /* Adjust this value to match your sidebar's width */
+}
+
+@media (max-width: 768px) {
+    .sidebar-open {
+      margin-left: 0; /* Adjust or remove the push effect on small screens */
+    }
+}
