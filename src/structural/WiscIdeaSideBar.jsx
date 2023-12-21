@@ -12,10 +12,10 @@ const WiscIdeaSideBar = ({isOpen, closeSidebar }) => {
             <span className={classes.closeIcon} onClick={closeSidebar}>
                 <CloseIcon size ={30}/>
             </span>
-            <div className='links'>
-                <NavLink to={"none"}>HOME</NavLink>
-                <NavLink>send</NavLink>
-                <NavLink>NEXt</NavLink>
+            <div className={classes.links} >
+                <NavLink to={"home"} >Home Page</NavLink>
+                <NavLink to={"template"}>Template</NavLink>
+                <NavLink to={"none"}>Page Not Found</NavLink>
             </div>
         </div>
     

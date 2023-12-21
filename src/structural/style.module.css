@@ -21,7 +21,9 @@ header{
 
 .links{
     display: flex;
-    gap: 10rem;
+  flex-direction: column; /* Align links vertically */
+  gap: 1rem; /* Adjust the space between links */
+  padding: 1rem; /* Add some padding around the links */
 }
 
 .sidebar{
@@ -36,10 +38,17 @@ header{
     overflow: hidden;
     transform: translateX(-100%);
     transition: transform 0.4s ease-in-out;
+    text-align: center; /* Center the text */
 }
+
 .sidebar.open{
     transform: translateX(0);
 }
+
+.sidebar a:hover {
+    background-color: #f2f2f2; /* Slight background on hover for feedback */
+    color: #333; /* Darker text color on hover */
+  }
 
 .closeIcon{
     position: absolute;
