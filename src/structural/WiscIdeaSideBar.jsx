@@ -13,7 +13,7 @@ const WiscIdeaSideBar = ({isOpen, closeSidebar }) => {
                 <CloseIcon size ={30}/>
             </span>
             <div className='links'>
-                <NavLink>HOME</NavLink>
+                <NavLink to={"none"}>HOME</NavLink>
                 <NavLink>send</NavLink>
                 <NavLink>NEXt</NavLink>
             </div>

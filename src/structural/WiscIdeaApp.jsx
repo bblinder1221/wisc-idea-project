@@ -11,7 +11,8 @@ function WiscIdeaApp() {
       <Routes>
         <Route path="/" element={<WiscIdeaNavBar/>}>
           <Route index element={<WiscIdeaHome/>} />
-          {/* <Route path="/login" element={<BadgerLogin />}></Route>
+          <Route path="/home" element={<WiscIdeaHome />}></Route>
+          {/* 
           <Route path="/register" element={<BadgerRegister />}></Route>
           <Route path="/logout" element={<BadgerLogout />}></Route> */}
           <Route path="*" element={<WiscIdeaNoMatch />} />

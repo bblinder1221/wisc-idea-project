@@ -21,7 +21,8 @@ const WiscIdeaNavBar = () => {
     }
 
   return (
-    <header>
+    <>
+    <header className='header-navbar'>
         <div className='navbar'>
             <div className={classes.menuButton} onClick={openSidebar}>
                 <MenuIcon size={30}/>
@@ -38,13 +39,15 @@ const WiscIdeaNavBar = () => {
                 </Navbar.Brand>
             </div>
         </div>
-        <div style={{ margin: "1rem" }}>
-            <WiscIdeaNavBarContext.Provider>
-                <Outlet />
-            </WiscIdeaNavBarContext.Provider>
-        </div>
+        
         <WiscIdeaSideBar isOpen= {isOpen} closeSidebar={closeSidebar}/>  
     </header>
+    <div style={{ margin: "1rem" }}>
+            <WiscIdeaNavBarContext.Provider value={isOpen}>
+                <Outlet />
+            </WiscIdeaNavBarContext.Provider>
+    </div>
+    </>
   );
 };
 
