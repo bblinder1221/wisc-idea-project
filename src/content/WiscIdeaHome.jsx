@@ -2,7 +2,7 @@ import React, { memo } from "react"
 import { Image } from "react-bootstrap";
 function WiscIdeaHome () {
     return <>
-        <h1>Welcome to the Wisconsin Idea: Past, Present, Future Website!</h1>
+        <h1> The Wisconsin Idea: Past, Present, Future</h1>
         <Image src="../../figures/wiscideahome.jpg" alt="Wisconsin Idea Home" style={{
             resizeMode: 'auto',
             height: "559px",

@@ -20,7 +20,7 @@ const WiscIdeaSideBar = ({isOpen, closeSidebar }) => {
             </span>
             <div className={classes.links} >
                 <NavLink as={Link} to={"home"} >Home Page</NavLink>
-                <NavLink as={Link} to={"template"}>Template</NavLink>
+                <NavLink as={Link} to={"unemployment_insurance"}>Unemployment Insurance</NavLink>
                 <NavLink as={Link} to={"none"}>Page Not Found</NavLink>
                 <NavDropdown title="Dropdowns">
                             {

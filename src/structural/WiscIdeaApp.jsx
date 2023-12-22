@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import WiscIdeaHome from '../content/WiscIdeaHome';
 import WiscIdeaNoMatch from '../content/WiscIdeaNoMatch.jsx';
 import WiscIdeaNavBar from './WiscIdeaNavBar.jsx';
-import WiscIdeaTemplate from '../content/WiscIdeaContentTemplate.jsx'
+import UnemploymentInsurance from '../content/UnemploymentInsurance.jsx'
 import classes from "./style.module.css";
 
 function WiscIdeaApp() {
@@ -16,7 +16,7 @@ function WiscIdeaApp() {
         <Routes className={`${classes.sidebarOpen}`}>
             <Route index element={<WiscIdeaHome/>} />
             <Route path="/home" element={<WiscIdeaHome />}></Route>
-            <Route path="/template" element={<WiscIdeaTemplate />}></Route>
+            <Route path="/unemployment_insurance" element={<UnemploymentInsurance />}></Route>
             <Route path="*" element={<WiscIdeaNoMatch />} />
         </Routes>
       </div>
